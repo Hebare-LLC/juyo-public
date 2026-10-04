@@ -1,33 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Delete Your Juyo Data</title>
-  <style>
-    body { max-width: 48rem; margin: auto; padding: 2rem 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #202124; background: #fff; }
-    nav { display: flex; flex-wrap: wrap; gap: 1rem; }
-    a { color: #174ea6; }
-    footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Delete Your Juyo Data</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #FAFAF8;
+    --text: #1F1B2E;
+    --subtext: #514C64;
+    --accent: #534AB7;
+    --rule: #E4E1EC;
+    --card: #F1EFF9;
+    --warn-bg: #FDEDEC;
+    --warn-text: #8A2E2E;
+    --ok-bg: #E9F7EF;
+    --ok-text: #276B46;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    line-height: 1.65;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 72px 28px 100px 28px; }
+  .masthead { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .mark { width: 34px; height: 34px; border-radius: 10px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .brand { font-family: -apple-system, 'Segoe UI', sans-serif; font-weight: 700; font-size: 17px; color: var(--text); }
+  h1 { font-size: 34px; font-weight: 600; margin: 28px 0 6px 0; letter-spacing: -0.2px; }
+  .meta { font-family: -apple-system, 'Segoe UI', sans-serif; color: var(--subtext); font-size: 14px; margin-bottom: 40px; }
+  .lede { font-size: 18px; color: var(--subtext); margin-bottom: 36px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 44px 0 14px 0; display:flex; align-items:center; gap:10px; }
+  .step-num { width:26px; height:26px; border-radius:50%; background: var(--accent); color:white; font-family:-apple-system,sans-serif; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  p { margin: 0 0 16px 0; }
+  ol, ul { margin: 0 0 16px 0; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card { background: var(--card); border-radius: 14px; padding: 20px 24px; margin: 16px 0 28px 0; }
+  .warn { background: var(--warn-bg); color: var(--warn-text); border-radius: 14px; padding: 16px 20px; font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14.5px; margin: 24px 0 40px 0; }
+  .ok { background: var(--ok-bg); color: var(--ok-text); border-radius: 14px; padding: 16px 20px; font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14.5px; margin: 24px 0 40px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 28px 0; font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 14.5px; }
+  th, td { text-align: left; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--subtext); font-weight: 600; font-size: 13px; }
+  .rule { height: 1px; background: var(--rule); border: none; margin: 48px 0; }
+  .contact { font-family: -apple-system, 'Segoe UI', sans-serif; font-size: 15px; }
+  .contact a, .lede a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .btn {
+    display: inline-block; font-family: -apple-system, 'Segoe UI', sans-serif;
+    background: var(--accent); color: white !important; font-weight: 600; font-size: 15px;
+    padding: 13px 22px; border-radius: 12px; text-decoration: none; border: none;
+  }
+  footer { font-family: -apple-system, 'Segoe UI', sans-serif; color: var(--subtext); font-size: 13px; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--rule); }
+  @media (max-width: 480px) { .wrap { padding: 48px 20px 80px 20px; } h1 { font-size: 28px; } }
+</style>
 </head>
 <body>
-  <header>
-    <p>Juyo · Hebare LLC</p>
-    <nav aria-label="Juyo information">
-      <a href="juyo-privacy-policy.html">Privacy policy</a>
-      <a href="delete-your-juyo-account.html">Delete your account</a>
-      <a href="delete-your-juyo-data.html" aria-current="page">Delete your data</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Delete Your Juyo Data</h1>
-    <p>Verified data deletion instructions are pending publication, including which data can be deleted, any retention exceptions, and processing times.</p>
-    <p>This static website cannot accept or process data deletion requests. Do not post passwords or personal data here.</p>
-    <h2>Looking for account deletion?</h2>
-    <p>For information about deleting your account, visit <a href="delete-your-juyo-account.html">Delete Your Juyo Account</a>.</p>
-    <p>See the <a href="juyo-privacy-policy.html">privacy policy page</a> for the current status of Juyo's privacy information.</p>
-  </main>
-  <footer>Juyo · Hebare LLC</footer>
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="mark">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 12h4l2-7 4 14 2-7h6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <span class="brand">Juyo</span>
+  </div>
+
+  <h1>Delete Your Data</h1>
+  <div class="meta">Last updated: October 4, 2026</div>
+
+  <p class="lede">You can permanently delete all of your logged history and health data while keeping your account, login, and goals intact. This is different from deleting your account entirely — see <a href="https://claude.ai/artifact/HUCkySwJiQyEwcJyAw6GUJ">Delete Your Account</a> if that's what you're looking for instead.</p>
+
+  <div class="ok">Your account stays active. Your profile, goals, and consent settings are not affected — only your historical data is erased.</div>
+
+  <h2><span class="step-num">1</span> If you still have the Juyo app</h2>
+  <p>This is instant and handled entirely on your device:</p>
+  <ol>
+    <li>Open Juyo and go to <b>Menu → Settings</b></li>
+    <li>Scroll to the bottom, to the section next to <b>Delete Account</b>, and tap <b>Delete All History</b> (in red)</li>
+    <li>Type <b>DELETE</b> to confirm</li>
+    <li>Tap <b>Delete All History</b></li>
+  </ol>
+  <p>This takes effect immediately — there is no waiting period.</p>
+
+  <h2><span class="step-num">2</span> If you no longer have the app installed</h2>
+  <p>Email us from the address associated with your account and we will process the deletion on our end:</p>
+  <div class="card">
+    <a class="btn" href="mailto:privacy@hebare.com?subject=Data%20deletion%20request%20(keep%20account)">Email privacy@hebare.com</a>
+  </div>
+  <p>Please include the email address you used to sign in with Juyo (Google or Apple), and mention that you'd like your <b>data</b> deleted while keeping your account. We will confirm once complete, typically within 30 days.</p>
+
+  <h2>What gets deleted</h2>
+  <p>This permanently removes:</p>
+  <ul>
+    <li>All logged Nutrition, Activity, Mood, Sleep, and Mindfulness entries</li>
+    <li>All medication and medical history entries, if provided</li>
+    <li>Your Ask Juyo conversation history</li>
+    <li>All computed health metrics (Health Score history, Strain, Stress Levels, Cardio Load, and related records)</li>
+  </ul>
+
+  <h2>What stays</h2>
+  <p>Your account itself is unaffected:</p>
+  <ul>
+    <li>Your login (Google or Apple) and profile</li>
+    <li>Your goals and targets</li>
+    <li>Your consent settings in Data &amp; Privacy</li>
+  </ul>
+  <p>Because your data-type permissions (Settings → Data &amp; Privacy) stay on, Juyo will simply start collecting fresh history again from this point forward.</p>
+
+  <div class="warn">This action cannot be undone. Once confirmed, deleted history cannot be recovered. This is an all-or-nothing action — we're currently not able to delete only a single data type (for example, only Sleep) while keeping the rest.</div>
+
+  <hr class="rule">
+
+  <h2 style="margin-top:0;">Questions</h2>
+  <p class="contact">For anything else about your data, see our <a href="#" style="border-bottom:1px solid currentColor; color:var(--accent); text-decoration:none;">Privacy Policy</a>, or contact <a href="mailto:privacy@hebare.com">privacy@hebare.com</a>.</p>
+
+  <footer>&copy; 2026 Hebare LLC. All rights reserved.</footer>
+
+</div>
 </body>
 </html>
