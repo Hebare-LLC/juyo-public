@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juyo Public Pages</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #FAFAF8;
+      --text: #1F1B2E;
+      --subtext: #514C64;
+      --accent: #534AB7;
+      --card: #F1EFF9;
+      --rule: #E4E1EC;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 680px;
+      background: white;
+      border: 1px solid var(--rule);
+      border-radius: 20px;
+      padding: 40px 32px;
+      box-shadow: 0 16px 40px rgba(31, 27, 46, 0.08);
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 34px;
+      font-weight: 600;
+    }
+    p {
+      margin: 0 0 28px;
+      color: var(--subtext);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li + li {
+      margin-top: 14px;
+    }
+    a {
+      display: block;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: var(--card);
+      color: var(--accent);
+      font-family: -apple-system, 'Segoe UI', sans-serif;
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    a:hover,
+    a:focus-visible {
+      outline: none;
+      background: #EAE6FF;
+    }
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 28px 20px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Juyo Public Pages</h1>
+    <p>Choose a page below.</p>
+    <ul>
+      <li><a href="juyo-privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="delete-your-juyo-account.html">Delete Your Account</a></li>
+      <li><a href="delete-your-juyo-data.html">Delete Your Data</a></li>
+    </ul>
+  </main>
+</body>
+</html>
