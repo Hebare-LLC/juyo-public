@@ -3,7 +3,7 @@ Publicly available documents
 
 ## Juyo website
 
-The website consists of three standalone HTML pages with no build step or dependencies:
+The website consists of an `index.html` landing page and three standalone HTML content pages with no build step or dependencies:
 
 - [Privacy policy](juyo-privacy-policy.html)
 - [Delete your account](delete-your-juyo-account.html)
